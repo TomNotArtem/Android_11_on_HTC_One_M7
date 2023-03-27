@@ -25,7 +25,7 @@
 ## Opening the bootloader:
 *Attention! When you open the bootloader, the internal memory of the phone will be completely cleared! Save the data to your PC.*
 
-0. Register on the website HTCDev.com
+0. Register on the website [HTCDev.com](HTCDev.com)
 1. Select Unlock Bootloader and click Start
 2. Select all other supported models from the list and click Start Unlocking the bootloader
 3. We agree to all the conditions and go to the instructions page (the Instructions button for unlocking the bootloader).
@@ -42,7 +42,7 @@
 14. The phone will reboot. Ready!
 15. To make sure that the bootloader is unlocked, we reboot into the bootloader (see point 5.5) and we see the inscription *** UNLOCKED at the top of the screen ***
 
-## Download TWRP:
+## Download and install TWRP::
 
 0. Download [TWRP](https://dl.twrp.me/m7univ/) and rename it to recovery.img. If the zip archive is downloaded, then you need to pull out the recovery.img file from there
 1. Place the file you downloaded in the same folder where the Android files are, that is C:\Android
@@ -57,7 +57,7 @@ fastboot reboot
 
 ## Installing Firmware and BiTGApps:
 
-0. Download the selected firmware and put it in the phone's memory, for convenience, it is better to put it in the root folder. You also need to download BiTGApps- Google apps (Play Market, etc.)
+0. Download the selected firmware and put it in the phone's memory, for convenience, it is better to put it in the root folder. You also need to download [BiTGApps](https://bitgapps.github.io/)- Google apps (Play Market, etc.)
 1. Reboot into recovery
 2. We make types, that is, bringing it to the factory state:
 ```Swipe, swipe to execute. You can manually select the items to be cleaned: Dalvik Cache, Cache, Data, System. To do this, click Advanced Wipe.```
