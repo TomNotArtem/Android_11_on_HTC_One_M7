@@ -1,4 +1,4 @@
-# complete guide for installing custom firmware on HTC One m7
+# Сomplete guide for installing custom firmware on HTC One m7
 
 ![image](https://user-images.githubusercontent.com/123565843/227847022-bb9b7a35-4f98-4c7c-a05f-b44d5fd23769.png)
 
@@ -17,6 +17,10 @@
 2. Unpack the archive to c:\android folder
 3. Connect your phone to your computer via USB
 4. Install [the drivers](https://github.com/TomNotArtem/Android_11_on_HTC_One_M7/raw/main/HTC_drivers_Win7_x64.zip). The phone in the PC device manager should be defined as "MyHTC". Drivers for Windows 7 and later
+
+*If you are unable to install the driver, switch your phone to fastboot mode and install the driver again. How to switch the phone is indicated in point 4 Opening the bootloader.*
+
+*In my case, the phone showed up under "Other Devices" called "Android 1". After installing the driver, it appeared in the "Android USB Devices" section called "My HTC".*
 
 ## Opening the bootloader:
 *Attention! When you open the bootloader, the internal memory of the phone will be completely cleared! Save the data to your PC.*
