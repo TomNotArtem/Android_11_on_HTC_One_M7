@@ -14,9 +14,9 @@
 
 0. To work with adb on your phone, you need to enable USB debugging. To do this, go to Settings, then About the phone. Find the line with the build number and click on it 7 times! After that, go back to the first settings screen, select the item for developers and check the box next to the corresponding item there.
 1. Download files to work with  [adb and fastboot](https://developer.android.com/studio/releases/platform-tools#revisions)
-2. Unpack the archive to c:\android folder
+2. Unpack the archive to C:\android folder
 3. Connect your phone to your computer via USB
-4. Install [the drivers](https://github.com/TomNotArtem/Android_11_on_HTC_One_M7/raw/main/HTC_drivers_Win7_x64.zip). The phone in the PC device manager should be defined as "MyHTC". Drivers for Windows 7 and later
+4. Install [the drivers](https://github.com/TomNotArtem/Android_11_on_HTC_One_M7/raw/main/HTC_drivers_Win7_x64.zip). The phone in the PC device manager should be defined as "My HTC". Drivers for Windows 7 and later
 
 *If you are unable to install the driver, switch your phone to fastboot mode and install the driver again. How to switch the phone is indicated in point 4 Opening the bootloader.*
 
@@ -25,13 +25,13 @@
 ## Opening the bootloader:
 *Attention! When you open the bootloader, the internal memory of the phone will be completely cleared! Save the data to your PC.*
 
-0. Register on the website [https://www.htcdev.com/](HTCDev.com)
+0. Register on the website [HTCDev.com](https://www.htcdev.com/) (The site describes the process in detail and in pictures, so this stage can be visualized according to the instructions on the site.)
 1. Select Unlock Bootloader and click Start
 2. Select all other supported models from the list and click Start Unlocking the bootloader
 3. We agree to all the conditions and go to the instructions page (the Instructions button for unlocking the bootloader).
 4. Switch the phone to the fast boot mode (bootloader): turn off the phone by pressing the power button and holding it until it starts to reboot, then release the power and immediately press the volume down button (-) and hold until you get into the bootloader
 5. Check how the phone was identified in the device manager. It must be MyHTC. If not, install the driver again.
-6. In the c folder:\android with the Shift key pressed, right-click anywhere and select Open Command Window. The command line will start, in which it should be written c:\android >
+6. In the c:\android with the Shift key pressed, right-click anywhere and select Open Command Window. The command line will start, in which it should be written C:\android
 7. At the command prompt, type the ```fastboot oem get_identifier_token``` command
 8. Select and copy the text (right-click, select Mark, press Enter) as shown in step 9 on HTCDev
 9 website. Insert the "My Device ID Token" into the form:" on htcdev.com and click Submit (step 10)
@@ -44,7 +44,7 @@
 
 ## Download and install TWRP::
 
-0. Download [TWRP](https://dl.twrp.me/m7univ/) and rename it to recovery.img. If the zip archive is downloaded, then you need to pull out the recovery.img file from there
+0. Download latest version [TWRP](https://dl.twrp.me/m7univ/) and rename it to recovery.img. If the zip archive is downloaded, then you need to pull out the recovery.img file from there
 1. Place the file you downloaded in the same folder where the Android files are, that is C:\android
 2. Switch the phone to fastboot mode
 3. Now type in the command line:
@@ -57,16 +57,21 @@ fastboot reboot
 
 ## Installing Firmware and BiTGApps:
 
-0. Download the [selected firmware](https://androidfilehost.com/?w=files&flid=319646&sort_by=date&sort_dir=DESC) and put it in the phone's memory, for convenience, it is better to put it in the root folder. You also need to download [BiTGApps](https://bitgapps.github.io/)- Google apps (Play Market, etc.)
+0. Download the [lineage-18.1-20211007-UNOFFICIAL-m7](https://androidfilehost.com/?w=files&flid=319646&sort_by=date&sort_dir=DESC) and put it in the phone's memory, for convenience, it is better to put it in the root folder. You also need to download [BiTGApps-arm-11.0.0-v1.9_signed](https://bitgapps.github.io/)- Google apps (Play Market, etc.)
 1. Reboot into recovery
 2. We make types, that is, bringing it to the factory state:
 ```Swipe, swipe to execute. You can manually select the items to be cleaned: Dalvik Cache, Cache, Data, System. To do this, click Advanced Wipe.```
 3. Installing the firmware:
 ```Install -> select the downloaded firmware -> confirm```
-4. Done! The firmware will be installed! Next, you need to install BiTGApps- just like the firmware
-5. Reboot the device
+4. Done! The firmware will be installed! **Do not reboot your device. Go back to the recovery with the "Back" buttons.**
+5. Next, you need to install BiTGApps just like the firmware
+6. Reboot the device
 
 
 P.S. If the command line responds to the input of adb commands with error: ```device not found```, then there is a problem with the drivers. Go to the device manager and see how the phone is identified.
 
 P.P.S. Thread on XDA: [[ROM][11.0][UNOFFICIAL][M7-ALL] LineageOS 18.1 [STABLE]](https://forum.xda-developers.com/t/rom-11-0-unofficial-m7-all-lineageos-18-1-stable.4454219/)
+
+# Finished result:
+https://user-images.githubusercontent.com/123565843/227884441-31bf18c1-7067-4c9d-85ce-7e2eafa2a78b.MOV
+
