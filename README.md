@@ -36,8 +36,8 @@
 8. Select and copy the text (right-click, select Mark, press Enter) as shown in step 9 on HTCDev
 9 website. Insert the "My Device ID Token" into the form:" on htcdev.com and click Submit (step 10)
 10. After some time, an email with the Unlock_code files attached will be sent to your mailbox specified during registration.bin
-11. Download it and save it in the c folder:\android
-12. At the command prompt, type fastboot flash unlocktoken Unlock_code.bin
+11. Download it and save it in the c:\android folder.
+12. At the command prompt, type ```fastboot flash unlocktoken Unlock_code.bin```
 13. A menu with unlocking the bootloader should appear on the smartphone. Select "Yes" (using the volume control) and press the power button.
 14. The phone will reboot. Ready!
 15. To make sure that the bootloader is unlocked, we reboot into the bootloader (see point 5.5) and we see the inscription *** UNLOCKED at the top of the screen ***
@@ -45,7 +45,7 @@
 ## Download and install TWRP::
 
 0. Download [TWRP](https://dl.twrp.me/m7univ/) and rename it to recovery.img. If the zip archive is downloaded, then you need to pull out the recovery.img file from there
-1. Place the file you downloaded in the same folder where the Android files are, that is C:\Android
+1. Place the file you downloaded in the same folder where the Android files are, that is C:\android
 2. Switch the phone to fastboot mode
 3. Now type in the command line:
 ```
