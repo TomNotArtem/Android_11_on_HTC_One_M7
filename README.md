@@ -42,7 +42,7 @@
 14. The phone will reboot. Ready!
 15. To make sure that the bootloader is unlocked, we reboot into the bootloader (see point 5.5) and we see the inscription *** UNLOCKED at the top of the screen ***
 
-## Download and install TWRP::
+## Download and install TWRP:
 
 0. Download latest version [TWRP](https://dl.twrp.me/m7univ/) and rename it to recovery.img. If the zip archive is downloaded, then you need to pull out the recovery.img file from there
 1. Place the file you downloaded in the same folder where the Android files are, that is C:\android
@@ -72,6 +72,9 @@ P.S. If the command line responds to the input of adb commands with error: ```de
 
 P.P.S. Thread on XDA: [[ROM][11.0][UNOFFICIAL][M7-ALL] LineageOS 18.1 [STABLE]](https://forum.xda-developers.com/t/rom-11-0-unofficial-m7-all-lineageos-18-1-stable.4454219/)
 
-# Finished result:
-https://user-images.githubusercontent.com/123565843/227884441-31bf18c1-7067-4c9d-85ce-7e2eafa2a78b.MOV
+# Finished result(I have pre-installed a lightweight keyboard, internet browser, and game to show that the system is working):
+
+https://user-images.githubusercontent.com/123565843/227903048-87101406-92fa-4646-b0bf-5021c8b1f570.MOV
+
+
 
